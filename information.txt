@@ -1,0 +1,12 @@
+https://github.com/KeyanuTegas/IT5038-Web-Application-Project.git
+
+git config --global user.name KeyanuTegas
+
+git clone https://github.com/KeyanuTegas/IT5038-Web-Application-Project.git
+
+git config --global user.email keyanutegas98@gmail.com
+git config --global user.name keyanutegas
+
+1350 x 450
+
+https://www.cleanpng.com/png-surfboard-fins-portable-network-graphics-surfing-s-7053951/download-png.html

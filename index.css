@@ -1,11 +1,16 @@
+/* container to for the whole code */
 #container {
   display: block;
   text-align: center;
   width: 1340px;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* header image */
 .header-image {
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .header-image img {
@@ -13,16 +18,19 @@
   padding-right: 5px;
 }
 
+/* index section */
 .index-section {
   display: block;
-  padding-bottom: 100px;
-  font-family: "Open Sans", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .index-section h2 {
   font-size: 38px;
 }
 
+/* index section images */
 #section-1 img {
   display: inline-block;
   border-radius: 50%;
@@ -42,19 +50,37 @@
   width: 305px;
 }
 
+/* section format + positioning following text */
 #section-1 {
   display: inline-block;
   padding-top: 30px;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 #section-2 {
   display: inline-block;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 120px;
+  padding-right: 120px;
   padding-top: 30px;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 #section-3 {
   display: inline-block;
   padding-top: 30px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* center the section text */
+.centered-section-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }

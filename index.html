@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./index.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Surf Life - Home</title>
   </head>
   <body>
@@ -13,37 +16,67 @@
       <div class="header-image">
         <img
           alt="image of person on surfboard in water"
-          src="site-images/man-surfing.jpg"
+          src="site-images/man-surfing-home.jpg"
         />
       </div>
       <div class="index-section">
-        <h2>Surf Life</h2>
+        <!-- <h2>Surf Life</h2> -->
         <p>
           <strong>Surfing</strong> is a surface water sport in which the wave
           rider, referred to as a surfer, rides on the forward or face of a
           moving wave, which usually carries the surfer towards the shore.
-          <br />
+          <br /><br />
 
           Waves suitable for surfing are primarily found in the ocean, but can
           also be found in lakes or rivers in the form of a standing wave or
-          tidal bore.
+          tidal bore.<br />
 
-          According to data collected and many myths, the chief of a tribe was the man who could surf the best.
-In other words, the top wave rider was the top man in his community. That says a lot about how important surfing was in the lives of the ancients.
+          According to data collected and many myths, the chief of a tribe was
+          the man who could surf the best.<br /><br />
 
-Hawaiian surfing has a rich tradition. The ancient Hawaiian inhabitants looked as surfing as an integral part of life. It was not just a hobby or a job. It was a way of life and an art form for them.
-
-Constructing a surfboard was a spiritual process, and great care went into all things related to surfing. The people were fascinated with the concept of taming the ocean and discovering the mysteries buried beneath the powerful waves.
+          In other words, the top wave rider was the top man in his community.
+          That says a lot about how important surfing was in the lives of the
+          ancients. Hawaiian surfing has a rich tradition.<br />
         </p>
         <div id="section-1">
-            <img alt="01" src="site-images/1-sunset-beach-woman-water.jpg" />
+          <img alt="01" src="site-images/1-sunset-beach-woman-water.jpg" />
+          <div class="centered-section-text">Lifestyle</div>
         </div>
         <div id="section-2">
-            <img alt="02" src="site-images/2-auto-beach-car-desert.jpg" />
+          <img alt="02" src="site-images/2-auto-beach-car-desert.jpg" />
+          <div class="centered-section-text">Travel</div>
         </div>
         <div id="section-3">
-            <img alt="03" src="site-images/3-blue-surfboard-with-leash-on-sand.jpg" />
+          <img
+            alt="03"
+            src="site-images/3-blue-surfboard-with-leash-on-sand.jpg"
+          />
+          <div class="centered-section-text">Boards</div>
         </div>
+      </div>
     </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>
