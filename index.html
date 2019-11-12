@@ -19,6 +19,17 @@
           src="site-images/man-surfing-home.jpg"
         />
       </div>
+      <div class="header">
+        <div class="navbar" id="nav">
+          <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Video</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
       <div class="index-section">
         <!-- <h2>Surf Life</h2> -->
         <p>
@@ -54,6 +65,13 @@
           <div class="centered-section-text">Boards</div>
         </div>
       </div>
+      <!-- Navigation bar-->
+
+      <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
     <script>
       var slideIndex = 0;
@@ -77,6 +95,18 @@
         dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
+
+      var nav = document.getElementById("nav");
+
+      window.onscroll = function() {
+        if (window.pageYOffset > 100) {
+          nav.style.background = "#007bff";
+          nav.style.boxShadow = "0px 4px 2px blue";
+        } else {
+          nav.style.background = "transparent";
+          nav.style.boxShadow = "none";
+        }
+      };
     </script>
   </body>
 </html>
