@@ -1,8 +1,22 @@
 /* Style the navigation bar */
+
+#shader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 47px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;;
+}
+
 .navbar {
     width: 100%;
-    background-color: #555;
     overflow: auto;
+    font-family: 'Courgette', cursive;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
   
   /* Navbar links */
@@ -12,17 +26,18 @@
     padding: 12px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    
   }
   
   /* Navbar links on mouse-over */
   .navbar a:hover {
-    background-color: #000;
+    background-color: rgba(255, 138, 193, 0.822);
   }
   
   /* Current/active navbar link */
   .active {
-    background-color: #4CAF50;
+    background-color: rgb(253, 182, 100);
   }
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
