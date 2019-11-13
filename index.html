@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/476b867054.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./index copy.css" />
-    <link rel="stylesheet" href="./index-navigation.css" />
+    <link rel="stylesheet" href="./index copy.css" /> 
+    <link rel="stylesheet" href="./index-navigation.css" /> 
+    <link rel="stylesheet" href="./html-banner-animation.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Surf Life - Home</title>
   </head>
   <body>
     <div id="container">
-      <div class="header-image">
-          <img id="img1" alt="image of person on surfboard in water" src="./site-images/person-surfing-shorter1.jpg" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-          <div id="shader"></div>
-          <div class="navbar">
-              <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-              <a href="#"><i class="far fa-heart"></i>  Lifestyle</a>
-              <a href="#"><i class="fas fa-shuttle-van"></i> Travel</a>
-              <a href="#"><i class="fas fa-star"></i>  Boards</a>
-          </div>
-      </div>
+    <div class="banner">
+        <div id="shader"></div>
+        <div class="navbar">
+          <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="#"><i class="far fa-heart"></i>  Lifestyle</a>
+          <a href="#"><i class="fas fa-shuttle-van"></i> Travel</a>
+          <a href="#"><i class="fas fa-star"></i>  Boards</a>
+        </div>
+        <div class="banner-text">
+            <h1>Surf Life.</h1>
+            <h1>We love surfing</h1>
+        </div>
+    </div>
       <hr />
       <div class="section">
         <div id="section-1">
@@ -57,40 +61,6 @@
         </div>
     </div>
     <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-
-      var nav = document.getElementById("nav");
-
-      window.onscroll = function() {
-        if (window.pageYOffset > 100) {
-          nav.style.background = "#007bff";
-          nav.style.boxShadow = "0px 4px 2px blue";
-        } else {
-          nav.style.background = "transparent";
-          nav.style.boxShadow = "none";
-        }
-      };
-
       function hover1(element) {
         element.setAttribute('src', './site-images/1-sunset-beach-woman-water-hover.jpg');
       }
@@ -114,8 +84,6 @@
       function unhover3(element) {
         element.setAttribute('src', './site-images/3-blue-surfboard-with-leash-on-sand.jpg');
       }
-
-  
     </script>
   </body>
 </html>
