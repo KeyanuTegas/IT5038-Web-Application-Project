@@ -84,6 +84,14 @@
       function unhover3(element) {
         element.setAttribute('src', './site-images/3-blue-surfboard-with-leash-on-sand.jpg');
       }
+
+      function changeCss () {
+      var navElement = document.querySelector(".banner:before");
+      if (this.scrollY > 200) {
+        navElement.style.opacity = fixed;
+      }
+      }
+      window.addEventListener("scroll", changeCss , false);
     </script>
   </body>
 </html>
