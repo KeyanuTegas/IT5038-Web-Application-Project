@@ -118,13 +118,23 @@
   color: white;
 }
 
-.box-img{
+#my-image p {
+  position: relative;
+  display: inline-block;
+  background-image: url(./site-images/me-pic-2.jpg);
   border-radius: 50%;
-  height: 40%;
-  width: 40%;
+  height: 210px;
+  width: 210px;
+  margin-bottom: 0px;
+}
+
+#my-image p:hover{
+  background-image: url(./site-images/me-pic-1.jpg);
+  transition: 1.5s;
 }
 
 .bottom-text h1{
+  margin-top: 0px;
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
@@ -156,6 +166,9 @@
   color: #b9b9b9;
 }
 
+#red-text {
+  color: red;
+}
 @media screen and (max-width: 1250px) {
 
   /* section format + positioning following text */ 
