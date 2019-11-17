@@ -34,12 +34,13 @@
   
 /* Navbar links on mouse-over */
 #navbar a:hover {
-  background-color: rgba(245, 233, 63, 0.712);
+  background-color: rgb(236, 164, 81);
 }
   
 /* Current/active navbar link */
 .active {
-  background-color: rgb(255, 57, 149);
+  background-color: rgb(238, 166, 34);
+  z-index: 0;
 }
 
   

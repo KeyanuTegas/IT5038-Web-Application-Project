@@ -82,38 +82,79 @@
   font-size: 20px;
 }
 
-.bottom-image {
-  float: left;
+.bottom-section {
+  position: relative;
+  text-align: center;
+  background-image: url(./site-images/man-surfing-home.jpg);
+  height: 650px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-shader {
+  background-color: black;
+  height: 650px;
+  width: 100%;
+  opacity: 0.5;
+
 }
 
 .bottom-text {
-  background-color: rgba(48, 47, 47, 0.842);
-  height: 782px;
-  padding-top: 5px;
-
-}
-
-.bottom-text p {
-  color:  rgb(255, 255, 255);
-}
-
-#button-text {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50; /* Green */
-  margin-top: 30px;
-  padding: 50px 120px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-#button-text:hover {
-  background-color: #4CAF50; /* Green */
+  position: absolute;
+  top: 40.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
   color: white;
 }
 
+.box-img{
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+}
+
+.bottom-text h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.bottom-text h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.bottom-text p{
+  text-align: justify;
+}
+.bottom-text ul{
+  margin: 0;
+  padding: 0;
+}
+.bottom-text li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.bottom-text li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.bottom-text li a:hover{
+  color: #b9b9b9;
+}
 
 @media screen and (max-width: 1250px) {
 
