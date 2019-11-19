@@ -1,38 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/476b867054.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/travel.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/476b867054.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/travel.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-
-        <div id="shader"></div>
-        <div class="navbar">
-            <a class="active" href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-            <a href="#"><i class="far fa-heart"></i>  Lifestyle</a>
-            <a href="./travel.html"><i class="fas fa-shuttle-van"></i> Travel</a>
-            <a href="#"><i class="fas fa-star"></i>  Boards</a>
+      <video autoplay muted loop id="myVideo">
+        <source src="../site-images/surfing-video.mp4" type="video/mp4" />
+      </video>
+      <div class="text-block">
+        <h4>World Class Surfing Destinations</h4>
+      </div>
+      <hr />
+      <div class="content-container">
+        <div class="text-content">
+          <h1>Bali</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+            eos alias dolorum. Eum, consectetur voluptatibus. Reprehenderit
+            debitis, omnis laboriosam possimus velit quidem suscipit, quod
+            soluta atque recusandae commodi voluptates quae.
+          </p>
         </div>
-
-        <video autoplay muted loop id="myVideo">
-            <source src="../site-images/surfing-video.mp4" type="video/mp4">
-        </video>
-
-        <div class="overlay">
-            <h2>Where's the best spots to surf?</h2>
+        <div class="text-content">
+          <h1>Hawaii</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            numquam possimus odio repellat eos consequatur corporis aliquam
+            ipsam eaque unde, tempore quasi inventore, sequi voluptate soluta
+            pariatur ea, suscipit molestias!
+          </p>
         </div>
-
-        <div class="container-text">
-
+        <div class="text-content">
+          <h1>Costa Rica</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            quibusdam hic corporis est, saepe quia suscipit esse delectus iusto
+            velit. Tempore, ea cupiditate. Cum eligendi incidunt, rem odit at
+            ea.
+          </p>
         </div>
+        <div class="image-1">
+          <img
+            src="../site-images/slideshow images/surfboards-leaning-on-van.jpg"
+          />
+          <p id="center-text" class="img__description_left">
+            This image looks super neat.
+          </p>
+        </div>
+        <div class="image-2">
+          <img
+            src="../site-images/slideshow images/photo-of-pod-of-dolphins.jpg"
+          />
+          <p class="img__description_middle">This image looks super neat.</p>
+        </div>
+        <div class="image-3">
+          <img
+            src="../site-images/slideshow images/cottages-in-the-middle-of-beach.jpg"
+          />
+          <p class="img__description_right">This image looks super neat.</p>
+        </div>
+        <div class="image-1'">
+          <img
+            src="../site-images/slideshow images/woman-soaking-on-the-swimming-pool.jpg"
+          />
+          <p id="center-text" class="img__description_left">
+            This image looks super neat.
+          </p>
+        </div>
+        <div class="image-2">
+          <img
+            src="../site-images/slideshow images/hawaii-hut-nature-paradise.jpg"
+          />
+          <p class="img__description_middle">This image looks super neat.</p>
+        </div>
+        <div class="image-3">
+          <img
+            src="../site-images/slideshow images/blue-sea-under-clear-blue-sky.jpg"
+          />
+          <p class="img__description_right">This image looks super neat.</p>
+        </div>
+        <div class="image-1">
+          <img
+            src="../site-images/slideshow images/body-of-water-near-mountain.jpg"
+          />
+          <p id="center-text" class="img__description_left">
+            This image looks super neat.
+          </p>
+        </div>
+        <div class="image-2">
+          <img
+            src="../site-images/slideshow images/coconut-trees-lined-near-sea-at-daytime.jpg"
+          />
+          <p class="img__description_middle">This image looks super neat.</p>
+        </div>
+        <div class="image-3">
+          <img
+            src="../site-images/slideshow images/person-swimming-alone-in-the-sea.jpg"
+          />
+          <p class="img__description_right">This image looks super neat.</p>
+        </div>
+      </div>
+      <div id="shader"></div>
+      <div class="navbar">
+        <a class="active" href="./index.html"
+          ><i class="fa fa-fw fa-home"></i> Home</a
+        >
+        <a href="#"><i class="far fa-heart"></i> Lifestyle</a>
+        <a href="./travel.html"><i class="fas fa-shuttle-van"></i> Travel</a>
+        <a href="#"><i class="fas fa-star"></i> Boards</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>

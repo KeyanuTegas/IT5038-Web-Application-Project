@@ -1,41 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 #container {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    margin: auto 0;
-    width: 100%;
-}       
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  width: 100%;
+}
 
 .navbar {
-    width: 100%;
-    overflow: hidden;
-    font-family: 'Courgette', cursive;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Courgette", cursive;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 1;
 }
-  
 
 .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-      
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
-    
 
 #navbar a:hover {
-    background-color: rgb(236, 164, 81);
+  background-color: rgb(236, 164, 81);
 }
-    
+
 .active {
-    background-color: rgb(238, 166, 34);
-    z-index: 9;
+  background-color: rgb(233, 161, 29);
+  z-index: 9;
 }
-  
+/*
 #shader {
     top: 0px;
     left: 0px;
@@ -45,32 +49,138 @@
     position: absolute;
     z-index: 1;
     opacity: 0.5;
+    margin-top: 0px;
 }
-
+*/
 video {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
 }
 
-.overlay {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-family: "Open Sans", sans-serif;
+.content {
+  display: block;
+  position: relative;
+  margin: 10px 20px 10px 20px;
 }
 
-.overlay h2 {
-    background: #000 none repeat scroll 0 0;
-    color: rgb(241, 233, 233);
-    font-weight: 30;
-    margin: 4em 4em 4em 4em;
-    mix-blend-mode: overlay;
-    padding: 5px 15px;
-    text-align: center;
-    color: #fff;
+.text-block {
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+  left: 25%;
+  top: 25%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px auto;
+  vertical-align: middle;
+  font-size: 30px;
 }
 
+.text-block h4 {
+  background: #000 none repeat scroll 0 0;
+  color: rgb(241, 233, 233);
+  font-weight: 30;
+  margin: 4em 4em 4em 4em;
+  mix-blend-mode: overlay;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.content-container {
+  position: relative;
+  margin-left: 0px;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.content-container div img {
+  height: 100%;
+  width: 100%;
+}
+
+.img__description_left {
+  position: absolute;
+  top: 13%;
+  bottom: -0.85%;
+  left: 0;
+  right: 66.6%;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 280px;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.4s, visibility 0.2s;
+}
+
+.image-1:hover .img__description_left {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description_middle {
+  position: absolute;
+  top: 14.3%;
+  bottom: 0.5%;
+  left: 33.3%;
+  right: 33.3%;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0.5;
+  margin: auto;
+  text-align: center;
+  line-height: 280px;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.4s, visibility 0.2s;
+}
+
+.image-2:hover .img__description_middle {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description_right {
+  position: absolute;
+  top: 14.3%;
+  bottom: 0.5%;
+  left: 66.6%;
+  right: 0.2%;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0.5;
+  margin: auto;
+  text-align: center;
+  line-height: 280px;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.4s, visibility 0.2s;
+}
+
+.image-3:hover .img__description_right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text-content {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.text-content h1 {
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Courgette", cursive;
+  font-weight: 1000;
+}
+
+.text-content p {
+  text-align: justify;
+  margin: 15px 15px;
+}
