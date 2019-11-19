@@ -1,0 +1,76 @@
+#container {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: auto 0;
+    width: 100%;
+}       
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Courgette', cursive;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 1;
+}
+  
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+      
+}
+    
+
+#navbar a:hover {
+    background-color: rgb(236, 164, 81);
+}
+    
+.active {
+    background-color: rgb(238, 166, 34);
+    z-index: 9;
+}
+  
+#shader {
+    top: 0px;
+    left: 0px;
+    height: 47px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+video {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.overlay h2 {
+    background: #000 none repeat scroll 0 0;
+    color: rgb(241, 233, 233);
+    font-weight: 30;
+    margin: 4em 4em 4em 4em;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+    color: #fff;
+}
+
