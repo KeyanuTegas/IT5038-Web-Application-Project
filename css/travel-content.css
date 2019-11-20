@@ -1,0 +1,297 @@
+.content-grid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 0.5em;
+}
+
+#content-image-1 {
+  background-image: url(../site-images/slideshow-images/blue-sea-under-clear-blue-sky-1.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+#content-text-1 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-1:hover > #content-text-1 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-1:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-2 {
+  background-image: url(../site-images/slideshow-images/body-of-water-near-mountain-2.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-2 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-2:hover > #content-text-2 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-2:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-3 {
+  background-image: url(../site-images/slideshow-images/coconut-trees-lined-near-sea-at-daytime-3.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-3 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-3:hover > #content-text-3 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-3:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-4 {
+  background-image: url(../site-images/slideshow-images/cottages-in-the-middle-of-beach-4.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-4 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-4:hover > #content-text-4 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-4:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-5 {
+  background-image: url(../site-images/slideshow-images/hawaii-hut-nature-paradise-5.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-5 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-5:hover > #content-text-5 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-5:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-6 {
+  background-image: url(../site-images/slideshow-images/person-swimming-alone-in-the-sea-6.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-6 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-6:hover > #content-text-6 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-6:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-7 {
+  background-image: url(../site-images/slideshow-images/photo-of-pod-of-dolphins-7.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-7 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-7:hover > #content-text-7 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-7:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-8 {
+  background-image: url(../site-images/slideshow-images/surfboards-leaning-on-van-8.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-8 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-8:hover > #content-text-8 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-8:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#content-image-9 {
+  background-image: url(../site-images/slideshow-images/woman-soaking-on-the-swimming-pool-9.jpg);
+  height: 20em;
+  width: auto;
+  opacity: 0.6;
+}
+
+#content-text-9 {
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+#content-image-9:hover > #content-text-9 {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+  font-size: 1.8em;
+}
+
+#content-image-9:hover {
+  opacity: 1;
+  transition: 300ms ease-out;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}

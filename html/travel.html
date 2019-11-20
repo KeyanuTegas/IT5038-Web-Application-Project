@@ -21,7 +21,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="../css/travel.css" />
+    <link rel="stylesheet" href="../css/travel-content.css" />
     <title>Document</title>
+    <script>
+            function newFunc()
+              var change_p_visibility = document.getElementById("content-text-1");
+              change_p_visibility.style.display = "block";
+      /*
+            var item = document.getElementById("content-image-1");
+            item.addEventListener("mouseover", func, false);
+            item.addEventListener("mouseout", func1, false);
+
+            function func() {
+              getElementById("content-text-1").setAttribute(
+                "style",
+                "display:block;"
+              );
+            }
+
+            function func1() {
+              getElementById("content-text-1").setAttribute("style", "display:none;");
+            } */
+    </script>
   </head>
   <body>
     <div id="container">
@@ -29,37 +50,10 @@
         <source src="../site-images/surfing-video.mp4" type="video/mp4" />
       </video>
       <div class="text-block">
-        <h4>World Class Surfing Destinations</h4>
+        <h4>World Class Destinations</h4>
       </div>
       <hr />
-      <div class="content-container">
-        <div class="text-content">
-          <h1>Bali</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            eos alias dolorum. Eum, consectetur voluptatibus. Reprehenderit
-            debitis, omnis laboriosam possimus velit quidem suscipit, quod
-            soluta atque recusandae commodi voluptates quae.
-          </p>
-        </div>
-        <div class="text-content">
-          <h1>Hawaii</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
-            numquam possimus odio repellat eos consequatur corporis aliquam
-            ipsam eaque unde, tempore quasi inventore, sequi voluptate soluta
-            pariatur ea, suscipit molestias!
-          </p>
-        </div>
-        <div class="text-content">
-          <h1>Costa Rica</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            quibusdam hic corporis est, saepe quia suscipit esse delectus iusto
-            velit. Tempore, ea cupiditate. Cum eligendi incidunt, rem odit at
-            ea.
-          </p>
-        </div>
+      <!--<div class="content-container">
         <div class="image-1">
           <img
             src="../site-images/slideshow images/surfboards-leaning-on-van.jpg"
@@ -120,6 +114,37 @@
           />
           <p class="img__description_right">This image looks super neat.</p>
         </div>
+      </div>-->
+      <div class="content-grid">
+        <div id="content-image-1">
+          <p id="content-text-1">Costa Rica</p>
+        </div>
+        <div id="content-image-2">
+          <p id="content-text-2">Bali</p>
+        </div>
+        <div id="content-image-3">
+          <p id="content-text-3">California</p>
+        </div>
+        <div id="content-image-4">
+          <p id="content-text-4">Tahiti</p>
+        </div>
+        <div id="content-image-5">
+          <p id="content-text-5">Bondai</p>
+        </div>
+        <div id="content-image-6">
+          <p id="content-text-6">Sri Lanka</p>
+        </div>
+        <div id="content-image-7">
+          <p id="content-text-7">South Africa</p>
+        </div>
+        <div id="content-image-8">
+          <p id="content-text-8">Fiji</p>
+        </div>
+        <div id="content-image-9">
+          <p id="content-text-9">Mexico</p>
+        </div>
+      </div>
+      <div id="bottom">
       </div>
       <div id="shader"></div>
       <div class="navbar">
