@@ -22,24 +22,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-backface-visibility: hidden; /*
+    -webkit-backface-visibility: hidden; 
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
-    */
     backface-visibility: hidden;
-    /*-webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
     -moz-transform: translateZ(0) scale(1.0, 1.0);
     -ms-transform: translateZ(0) scale(1.0, 1.0);
-    -o-transform: translateZ(0) scale(1.0, 1.0);*/
+    -o-transform: translateZ(0) scale(1.0, 1.0);
     transform: translateZ(0) scale(1.0, 1.0);
     background-image: url(../site-images/person-surfing-shorter1.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     animation: increase 60s linear 10ms infinite;
-    /*-webkit-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out; */
+    -o-transition: all 0.2s ease-in-out; 
     transition: all 0.6s ease-in-out;
     z-index: -2;
 }
@@ -91,3 +90,14 @@
         color: rgb(255, 187, 0);
       }
   }
+
+  @media screen and (max-width: 650px) {
+    .banner-text h1 {
+        font-size: 24px;
+    }
+    .banner-text {
+        width: 59%;
+        height: 25%;
+    }
+  }
+  

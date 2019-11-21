@@ -22,10 +22,6 @@ body {
     position: relative;
 }
 
-.content img {
-    width: 100%;
-}
-
 .content-text {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -115,17 +111,6 @@ textarea.contact-form-text {
   opacity: 0.5;
 }
 
-#shader {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 44px;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  position: fixed;
-  z-index: 1;
-  opacity: 0.5;
-}
 
 .navbar {
     width: 100%;
@@ -133,7 +118,7 @@ textarea.contact-form-text {
     font-family: 'Courgette', cursive;
     top: 0px;
     left: 0px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
 }
   

@@ -15,16 +15,7 @@
   margin: auto;
   padding: 10px 0px 15px 0px;
   height: 100px;
-  width: 130px;
-}
-
-#content-image-1:hover > #content-text-all {
-  transition: 1s;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  top: 100%;
-  left: 40%;
+  width: 180px;
 }
 
 #content-image-1 {
@@ -33,15 +24,6 @@
   width: auto;
   opacity: 0.6;
   cursor: pointer;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-50px);
-  }
 }
 
 #content-text-1 {
@@ -58,6 +40,15 @@
   top: 100%;
   left: 40%;
   font-size: 1.8em;
+}
+
+#content-image-1:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
 }
 
 #content-image-1:hover {
@@ -92,6 +83,15 @@
   font-size: 1.8em;
 }
 
+#content-image-2:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+}
+
 #content-image-2:hover {
   opacity: 1;
   transition: 300ms ease-out;
@@ -122,6 +122,15 @@
   top: 100%;
   left: 40%;
   font-size: 1.8em;
+}
+
+#content-image-3:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
 }
 
 #content-image-3:hover {
@@ -156,6 +165,15 @@
   font-size: 1.8em;
 }
 
+#content-image-4:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+}
+
 #content-image-4:hover {
   opacity: 1;
   transition: 300ms ease-out;
@@ -186,6 +204,15 @@
   top: 100%;
   left: 40%;
   font-size: 1.8em;
+}
+
+#content-image-5:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
 }
 
 #content-image-5:hover {
@@ -220,6 +247,15 @@
   font-size: 1.8em;
 }
 
+#content-image-6:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+}
+
 #content-image-6:hover {
   opacity: 1;
   transition: 300ms ease-out;
@@ -250,6 +286,15 @@
   top: 100%;
   left: 40%;
   font-size: 1.8em;
+}
+
+#content-image-7:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
 }
 
 #content-image-7:hover {
@@ -284,6 +329,15 @@
   font-size: 1.8em;
 }
 
+#content-image-8:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+}
+
 #content-image-8:hover {
   opacity: 1;
   transition: 300ms ease-out;
@@ -316,10 +370,46 @@
   font-size: 1.8em;
 }
 
+#content-image-9:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
+}
+
 #content-image-9:hover {
   opacity: 1;
   transition: 300ms ease-out;
   animation: bounce 1s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+  }
+  
+}
+
+@media screen and (max-width: 580px) {
+  .content-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 5px;
+  }
+  
 }
