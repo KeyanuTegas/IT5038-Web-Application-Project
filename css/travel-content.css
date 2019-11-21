@@ -1,7 +1,30 @@
 .content-grid {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-gap: 0.5em;
+  grid-template-columns: 33.0% 33.0% 33.0%;
+  grid-gap: 5px;
+}
+
+#content-text-all {
+  text-align: center;
+  font-size: 16px;
+  display: none;
+}
+
+.flag {
+  display: block;
+  margin: auto;
+  padding: 10px 0px 15px 0px;
+  height: 100px;
+  width: 130px;
+}
+
+#content-image-1:hover > #content-text-all {
+  transition: 1s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  top: 100%;
+  left: 40%;
 }
 
 #content-image-1 {
@@ -9,10 +32,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  cursor: pointer;
 }
 
 @keyframes bounce {
@@ -53,6 +73,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-2 {
@@ -84,6 +105,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-3 {
@@ -115,6 +137,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-4 {
@@ -146,6 +169,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-5 {
@@ -177,6 +201,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-6 {
@@ -208,6 +233,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-7 {
@@ -239,6 +265,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-8 {
@@ -270,6 +297,7 @@
   height: 20em;
   width: auto;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #content-text-9 {

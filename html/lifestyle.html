@@ -3,17 +3,86 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
+    <script
+      src="https://kit.fontawesome.com/476b867054.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../css/lifestyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../scripts/lifestyle.js"defer>
+    </script>
   </head>
   <body>
+    <div class="container">
+    <div class="content">
+        <img src="../site-images/assorted-colors-of-surfboard.jpg" />
+    </div>
+    <div class="content-text">
+        <div></div>
+        <div>
+          <h1>A surfer's lifestyle...</h1>
+          <p><strong>Though the iconic illustration of a surfer is one of a peaceful individual living a simple life, the reality often requires some sacrifices and a lifestyle quite removed from that as viewed by non-surfers.</strong>
+                <br /><br />
+                Actually, living a surfer's lifestyle is not about how exactly you appear; the things you wear or simply getting a surfboard tucked under your arm. It is just about a mindset, commitment to the ocean and accepting the fact that almost everything needs to take second place the instant the waves start to roll in.
+                <br /><br />
+                People who have fully committed themselves to surfing usually tend to do this in one of two ways - by relocating to the ocean and surfing at a devoted break day in and day out or by giving up the usual trappings of life and traveling the entire world in a continuous search for the perfect wave.
+                <br /><br />
+                <img class="context-text-image" src="../site-images/people-carrying-surfboards.jpg" />
+                <br /><br />
+                <i>Either way, most people will likely find themselves having to live frugally with the intention to achieve their goal and, for a nomadic surfer, will have to accept living without most of the luxuries and benefits that are regarded as the norm.</i>
+                <br /><br />
+                This also includes relationships, possessions and all other things which are generally used to indicate security and stability.
+                <br /><br />
+                <strong>The modern surfer is also a citizen of the world. He/she needs to know before he goes. Therefore, if you want to live the ultimate surfing life, tick the following boxes:</strong> 
+                <br /><br />
+                <strong>1. Know the ocean:</strong> learn what the wind is, and how it affects the ocean before it starts making waves;
+                <br /><br />
+                <strong>2. Eat well:</strong> fast food is surfing's worst enemy. Design your own diet, and include fruits in your daily habits;
+                <br /><br />
+                <strong>3. Exercise your body:</strong> ask a professional to delineate a surf training program that can fit into your weekly agenda;
+                <br /><br />
+                <img class="context-text-image" src="../site-images/surfer-and-his-dog-on-a-surf-board.jpg" />
+                <br /><br />
+                <strong>4. Study the weather charts:</strong> improve your surf forecasting knowledge, and anticipate the best swells;
+                <br /><br />
+                <strong>5. Read surf books:</strong> it might sound strange, but surf literature will make you a better surfer;
+                <br /><br />
+                <strong>6. Surf more:</strong> establish a surfing routine, and don't let winter stop you from catching waves;
+                <br /><br />
+                <strong>7. Don't follow the flock:</strong> surfers tend to surf where other surfers are surfing - watch the waves, and make your assessment;
+                <br /><br />
+                <img class="context-text-image" src="../site-images/man-surfing-on-body-of-water.jpg" />
+                <br /><br />
+                <strong>8. Travel and search new waves:</strong> plan a surf trip, build your own hierarchy of surf spots, and establish a personal wave quality scale;
+                <br /><br />
+                <strong>9. Respect others:</strong> surfers think surfing is a spiritual, blessed sport, but they can be greedy and voracious when it comes to catching waves - showing respect is teaching respect;
+                <br /><br />
+                <strong>10. Stay true to yourself:</strong> don't imitate, don't mimic - just let your mind and soul tell you what to do in the waves;</p>
+            </div>
+        <div></div>
+      </div>
     <div class="contact-section">
+      <p id="demo"></p>
       <h1>Contact Us</h1>
       <div class="border"></div>
-      <form class="contact-form" action="../html/travel.html" method="post">
+      <form class="contact-form" method="GET">
         <input type="text" class="contact-form-text" placeholder="Your name" />
         <input
           type="email"
+          id="form-name"
           class="contact-form-text"
           placeholder="Your email"
         />
@@ -21,9 +90,25 @@
         <textarea
           class="contact-form-text"
           placeholder="Your message"
+          id="form-phone"
         ></textarea>
-        <input type="submit" class="contact-form-btn" value="Send" />
+        <input
+          type="submit"
+          id="form-submit"
+          class="contact-form-btn"
+          value="Send"
+          onclick="thankYou()"
+        />
       </form>
     </div>
+    <div id="shader"></div>
+    <div class="navbar">
+        <a class="active" href="./index.html"
+          ><i class="fa fa-fw fa-home"></i> Home</a
+        >
+        <a href="../html/lifestyle.html"><i class="far fa-heart"></i> Lifestyle</a>
+        <a href="./travel.html"><i class="fas fa-shuttle-van"></i> Travel</a>
+        <a href="#"><i class="fas fa-star"></i> Boards</a>
+      </div>
   </body>
 </html>

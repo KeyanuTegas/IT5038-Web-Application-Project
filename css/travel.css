@@ -67,168 +67,20 @@ video {
 
 .text-block {
   position: absolute;
-  bottom: 25%;
-  right: 25%;
   left: 25%;
   top: 25%;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 10px auto;
   vertical-align: middle;
-  font-size: 30px;
 }
 
 .text-block h4 {
   background: #000 none repeat scroll 0 0;
   color: rgb(241, 233, 233);
+  font-size: 34px;
   font-weight: 30;
   margin: 4em 4em 4em 4em;
   mix-blend-mode: overlay;
-  padding: 10px 20px;
+  padding: 10px 100px;
   text-align: center;
   color: #fff;
 }
-
-/*
-.content-container {
-  position: relative;
-  margin-left: 0px;
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-}
-
-.content-container div img {
-  height: 100%;
-  width: 100%;
-}
-
-.img__description_left {
-  position: absolute;
-  top: -1.44%;
-  bottom: -0.85%;
-  left: 0;
-  right: 66.7%;
-  background: rgba(0, 0, 0, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0.5;
-  text-align: center;
-  line-height: 280px;
-
-  /* transition effect. not necessary */ /*
-  transition: opacity 0.4s, visibility 0.2s;
-}
-
-.image-1:hover .img__description_left {
-  visibility: visible;
-  opacity: 1;
-}
-
-.img__description_middle {
-  position: absolute;
-  top: 0%;
-  bottom: 0.5%;
-  left: 33.3%;
-  right: 33.3%;
-  background: rgba(0, 0, 0, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0.5;
-  margin: auto;
-  text-align: center;
-  line-height: 280px;
-
-  /* transition effect. not necessary */ /*
-  transition: opacity 0.4s, visibility 0.2s;
-} 
-
-.image-2:hover .img__description_middle {
-  visibility: visible;
-  opacity: 1;
-}
-
-.img__description_right {
-  position: absolute;
-  top: 0%;
-  bottom: 0.5%;
-  left: 66.6%;
-  right: 0.2%;
-  background: rgba(0, 0, 0, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0.5;
-  margin: auto;
-  text-align: center;
-  line-height: 280px;
-
-  /* transition effect. not necessary */ /*
-  transition: opacity 0.4s, visibility 0.2s;
-}
-
-.image-3:hover .img__description_right {
-  visibility: visible;
-  opacity: 1;
-}
-
-.content-grid {
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-}
-
-#content-image-1 {
-  background-image: url(../site-images/coconut-trees-lined-near-sea-at-daytime.jpg);
-  height: auto;
-  width: auto;
-  opacity: 0.6;
-  box-shadow: 5px 10px #888888;
-}
-
-#content-text-1 {
-  text-align: center;
-  font-size: 2em;
-  display: none;
-}
-
-#content-image-1:hover {
-  opacity: 1;
-  transition: 300ms ease-out;
-}
-/*
-#content-image-2 {
-  background-image: url(../site-images/cottages-in-the-middle-of-beach.jpg);
-  height: 20em;
-  width: auto;
-  opacity: 0.6;
-}
-
-#content-text-2 {
-  text-align: center;
-  font-size: 2em;
-  display: none;
-}
-
-#content-image-2:hover {
-  opacity: 1;
-  transition: 300ms ease-out;
-}
-
-#content-image-3 {
-  background-image: url(../site-images/person-swimming-alone-in-the-sea.jpg);
-  height: 20em;
-  width: auto;
-  opacity: 0.6;
-}
-
-#content-text-3 {
-  text-align: center;
-  font-size: 2em;
-  display: none;
-}
-
-#content-image-3:hover {
-  opacity: 1;
-  transition: 300ms ease-out;
-}
-*/
-/*
