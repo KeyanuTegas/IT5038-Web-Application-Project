@@ -394,8 +394,9 @@ video {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     margin: 15px 0px 25px 0px;
+    text-align: left;
   }
   
   .content-text h1 {
