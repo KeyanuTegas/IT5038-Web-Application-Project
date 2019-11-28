@@ -43,36 +43,36 @@
       <hr />
       <div class="section">
         <div id="section-1">
-          <a href="../html/lifestyle.html"
+          <a href="#lifestyle"
             ><img
               src="../site-images/1-sunset-beach-woman-water-hover.jpg"
               onmouseover="hover1(this);"
               onmouseout="unhover1(this);"
           /></a>
-          <a href="#" class="link-colour"
-            ><div class="centered-section-text">Theory</div></a
+          <a href="#lifestyle" class="link-colour"
+            ><div class="centered-section-text">Blog</div></a
           >
         </div>
         <div id="section-2">
-          <a href="./travel.html"
+          <a href="#locations"
             ><img
               src="../site-images/2-auto-beach-car-desert.jpg"
               onmouseover="hover2(this);"
               onmouseout="unhover2(this);"
           /></a>
-          <a href="./travel.html" class="link-colour"
-            ><div class="centered-section-text">Travel</div></a
+          <a href="#locations" class="link-colour"
+            ><div class="centered-section-text">Locations</div></a
           >
         </div>
         <div id="section-3">
-          <a href="#"
+          <a href="#contact"
             ><img
               src="../site-images/3-blue-surfboard-with-leash-on-sand.jpg"
               onmouseover="hover3(this);"
               onmouseout="unhover3(this);"
           /></a>
-          <a href="#" class="link-colour"
-            ><div class="centered-section-text">Techniques</div></a
+          <a href="#contact" class="link-colour"
+            ><div class="centered-section-text">Contact</div></a
           >
         </div>
         <div id="black-line"></div>
@@ -80,6 +80,7 @@
       <hr />
 
 <!-- Travel Section -->
+
       <div id="travel"></div>
       <div class="travel-content">
       <video autoplay muted loop id="myVideo">
@@ -90,6 +91,7 @@
       </div>
       </div>
       <hr />
+      <div id="locations"></div>
       <div class="content-grid">
         <div id="content-image-1">
           <p id="content-text-1">Costa Rica</p>
@@ -145,11 +147,10 @@
                 People who have fully committed themselves to surfing usually tend to do this in one of two ways - by relocating to the ocean and surfing at a devoted break day in and day out or by giving up the usual trappings of life and traveling the entire world in a continuous search for the perfect wave.
                 <br /><br />
                 <img class="context-text-image" src="../site-images/people-carrying-surfboards.jpg" />
-                <br /><br />
-                <i>Either way, most people will likely find themselves having to live frugally with the intention to achieve their goal and, for a nomadic surfer, will have to accept living without most of the luxuries and benefits that are regarded as the norm.</i>
-                <br /><br />
+                <p id="small-text"><i>Either way, most people will likely find themselves having to live frugally with the intention to achieve their goal and, for a nomadic surfer, will have to accept living without most of the luxuries and benefits that are regarded as the norm.</i></p>
                 This also includes relationships, possessions and all other things which are generally used to indicate security and stability.
                 <br /><br />
+                <h2>10 Important Lessons</h2>
                 <strong>The modern surfer is also a citizen of the world. He/she needs to know before he goes. Therefore, if you want to live the ultimate surfing life, tick the following boxes:</strong> 
                 <br /><br />
                 <strong>1. Know the ocean:</strong> learn what the wind is, and how it affects the ocean before it starts making waves;
@@ -248,7 +249,6 @@
       </div>
       <hr />
 
-
 <!-- Thank You Section -->
 
       <div id="thankyou"></div>
@@ -256,14 +256,15 @@
       <video autoplay muted loop id="myVideo">
         <source src="../site-images/surfing-video.mp4" type="video/mp4" />
       </video>
-      <div class="text-block">
+     <div class="text-block">
         <h4>Thank you for visiting my website!</h4>
       </div>
-      </div>
+      </div> 
       <hr />
 
 <!-- Navigation Section -->
 
+<a class="toggleNav" onclick="toggleNavigation()"><i class="fas fa-bars"></i></a>
 <div id="shader"></div>
 <div class="navbar">
   <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -274,8 +275,33 @@
   <a href="#thankyou"><i class="fas fa-star"></i> Thank you</a>
 </div>
 
+
     </div>
     <script>
+
+      function toggleNavigation() {
+        let nav = document.querySelector(".navbar");
+        let shader = document.querySelector("#shader")
+        if (nav.style.display === "none") {
+          nav.style.display = "block";
+        } else {
+          nav.style.display = "none";
+        }
+      }
+
+      var x = document.getElementById("form-submit");
+      function thankYou() {
+        alert("Thanks for visiting!")
+      }
+      function formValidate() {
+        let x = document.getElementById("form-phone").value
+        if (isNaN(x)) {
+          console.log("Not a number")
+        } else {
+          console.log("This is not a valid phone number")
+        }
+      }
+
       function hover1(element) {
         element.setAttribute(
           "src",
@@ -317,7 +343,7 @@
           "../site-images/3-blue-surfboard-with-leash-on-sand.jpg"
         );
       }
-
+/*
       function changeCss() {
         var navElement = document.querySelector(".banner:before");
         if (this.scrollY > 200) {
@@ -325,6 +351,7 @@
         }
       }
       window.addEventListener("scroll", changeCss, false);
+      */
     </script>
   </body>
 </html>

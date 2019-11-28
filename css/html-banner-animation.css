@@ -91,7 +91,7 @@
       }
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 720px) {
     .banner-text h1 {
         font-size: 24px;
     }
