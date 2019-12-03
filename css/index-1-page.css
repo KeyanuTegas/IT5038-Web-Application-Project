@@ -1,3 +1,5 @@
+/* Note: Nothing marking related here just 83 lines of CSS code */
+
 html,
 body {
   margin: 0;
@@ -50,7 +52,6 @@ body {
   width: 15em;
 }
 
-/* format whole section div */
 .section {
   padding: 3px 0px 0px 0px;
   display: grid;
@@ -58,7 +59,6 @@ body {
   background-image: linear-gradient(rgb(53, 52, 52), rgb(94, 94, 88));
 }
 
-/* section format + positioning following text */
 #section-1 {
   position: relative;
   text-align: center;
@@ -116,7 +116,6 @@ body {
   width: 100%;
   padding: 0px;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +196,6 @@ body {
 }
 
 @media screen and (max-width: 1250px) {
-  /* section format + positioning following text */
   #section-1 img {
     border-radius: 50%;
     height: 18em;
@@ -218,7 +216,6 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
-  /* section format + positioning following text */
   #section-1 img {
     border-radius: 50%;
     height: 15em;
@@ -239,7 +236,6 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-  /* section format + positioning following text */
   #section-1 img {
     border-radius: 50%;
     height: 12em;
@@ -260,7 +256,6 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  /* section format + positioning following text */
   #section-1 img {
     border-radius: 50%;
     height: 9em;
@@ -281,7 +276,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  /* section format + positioning following text */
   #section-1 img {
     border-radius: 50%;
     height: 6em;
@@ -483,3 +477,117 @@ video {
     display: block;
     position: relative;
   }
+
+  .text-block-2 {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    color: white;
+    vertical-align: middle;
+    height: 0px;
+  }
+  
+  .text-block-2 h4 {
+    background: #000 none repeat scroll 0 0;
+    color: rgb(241, 233, 233);
+    font-size: 2em;
+    mix-blend-mode: overlay;
+    margin-bottom: 4em;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-family: 'Courgette', cursive;
+  }
+
+  .text-block-2 p {
+    margin: 0px;
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    color: rgb(241, 233, 233);
+    font-size: 1.3em;
+    mix-blend-mode: overlay;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-family: 'Courgette', cursive;
+    overflow: scroll;
+    height: 200px;
+  }
+
+  .text-block-2 p::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 930px) {
+    .text-block-2 {
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      color: white;
+      vertical-align: middle;
+      height: 0px;
+    }
+
+  .text-block-2 h4 {
+      background: #000 none repeat scroll 0 0;
+      color: rgb(241, 233, 233);
+      font-size: 2em;
+      mix-blend-mode: overlay;
+      margin-bottom: 2.5em;
+      text-align: center;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      font-family: 'Courgette', cursive;
+    }
+  
+    .text-block-2 p {
+      margin: 0px;
+      background: rgb(0, 0, 0) none repeat scroll 0 0;
+      color: rgb(241, 233, 233);
+      font-size: 1.3em;
+      mix-blend-mode: overlay;
+      text-align: center;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      font-family: 'Courgette', cursive;
+      overflow: scroll;
+      height: 200px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+  .text-block-2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    vertical-align: middle;
+    height: 0px;
+  }
+
+.text-block-2 h4 {
+    display: none;
+    background: #000 none repeat scroll 0 0;
+    color: rgb(241, 233, 233);
+    font-size: 1.5em;
+    mix-blend-mode: overlay;
+    margin-bottom: 2.5em;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-family: 'Courgette', cursive;
+  }
+
+  .text-block-2 p {
+    margin: 0px;
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    color: rgb(241, 233, 233);
+    font-size: 1.0em;
+    mix-blend-mode: overlay;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-family: 'Courgette', cursive;
+    overflow: scroll;
+    height: 200px;
+  }
+}

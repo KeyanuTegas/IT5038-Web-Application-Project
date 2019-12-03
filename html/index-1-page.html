@@ -1,94 +1,89 @@
+<!-- DEAR COURSE TUTOR, I'VE COMMENTED THE MARKING REQUIREMENTS IN THE CODE -->
+<!-- Note: I have no security features -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO #1 (Search Engine Optimatisation) meta tags are for SEO -->
+    <meta name="description" content="We LOVE Surfing! and we know you do too! There are always great spots to surf and lot's to see..." />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/476b867054.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/476b867054.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/index-1-page.css" />
     <link rel="stylesheet" href="../css/index-navigation.css" />
     <link rel="stylesheet" href="../css/html-banner-animation.css" />
     <link rel="stylesheet" href="../css/travel-content.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../scripts/smooth-scroll.js" defer></script>
-    <title>Surf Life - Home</title>
+    <!-- SEO #2 (Search Engine Optimatisation) title tags are for SEO -->
+    <title>Surf Life</title>
   </head>
   <body>
     <div id="container">
 
 <!-- Home Section -->
-
+    <!-- HTML5 Structural Element (Header) -->
+    <header>
       <div id="home"></div>
-      <div class="banner">
-        <div class="banner-text">
-          <h1>Surf Life.</h1>
-          <h1>We love surfing</h1>
+        <div class="banner">
+          <div class="banner-text">
+             <!-- SEO #3 (Search Engine Optimatisation) header tags are for SEO -->
+            <h1>Surf Life.</h1>
+            <h1>We love surfing</h1>
+          </div>
         </div>
-      </div>
+    </header>
       <hr />
       <div class="section">
         <div id="section-1">
-          <a href="#lifestyle"
-            ><img
-              src="../site-images/1-sunset-beach-woman-water-hover.jpg"
-              onmouseover="hover1(this);"
-              onmouseout="unhover1(this);"
-          /></a>
-          <a href="#lifestyle" class="link-colour"
-            ><div class="centered-section-text">Blog</div></a
-          >
+          <a href="#lifestyle">
+            <!-- SEO #4 (Search Engine Optimatisation) image tags are for SEO -->
+            <!-- Accessibility Feature (ALT Tag) #1 -->
+            <img src="../site-images/1-sunset-beach-woman-water-hover.jpg" alt="Woman holding surfboard" onmouseover="hover1(this);" onmouseout="unhover1(this);"/>
+          </a>
+          <a href="#lifestyle" class="link-colour">
+            <div class="centered-section-text">Blog</div>
+          </a>
         </div>
         <div id="section-2">
-          <a href="#locations"
-            ><img
-              src="../site-images/2-auto-beach-car-desert.jpg"
-              onmouseover="hover2(this);"
-              onmouseout="unhover2(this);"
-          /></a>
-          <a href="#locations" class="link-colour"
-            ><div class="centered-section-text">Locations</div></a
-          >
+          <a href="#locations">
+            <!-- SEO #5 (Search Engine Optimatisation) image tags are for SEO -->
+            <!-- Accessibility Feature (ALT Tag) #2 -->
+            <img src="../site-images/2-auto-beach-car-desert.jpg" alt="Car with surfboards infront of rocky scenary" onmouseover="hover2(this);" onmouseout="unhover2(this);"/>
+          </a>
+          <a href="#locations" class="link-colour">
+            <div class="centered-section-text">Locations</div>
+          </a>
         </div>
         <div id="section-3">
-          <a href="#contact"
-            ><img
-              src="../site-images/3-blue-surfboard-with-leash-on-sand.jpg"
-              onmouseover="hover3(this);"
-              onmouseout="unhover3(this);"
-          /></a>
-          <a href="#contact" class="link-colour"
-            ><div class="centered-section-text">Contact</div></a
-          >
+          <a href="#contact">
+            <!-- SEO #6 (Search Engine Optimatisation) image tags are for SEO -->
+            <!-- Accessibility Feature (ALT Tag) #3 -->
+            <img src="../site-images/3-blue-surfboard-with-leash-on-sand.jpg" alt="Blue surfboard laying on beach sand" onmouseover="hover3(this);" onmouseout="unhover3(this);"/>
+          </a>
+          <a href="#contact" class="link-colour">
+            <div class="centered-section-text">Contact</div>
+          </a>
         </div>
         <div id="black-line"></div>
-      </div>
+      </div> 
       <hr />
 
 <!-- Travel Section -->
-
       <div id="travel"></div>
       <div class="travel-content">
-      <video autoplay muted loop id="myVideo">
-        <source src="../site-images/surfing-video.mp4" type="video/mp4" />
-      </video>
-      <div class="text-block">
-        <h4>World Class <br />Destinations</h4>
-      </div>
+        <video autoplay muted loop id="myVideo">
+          <!-- Accessibility Feature (ALT Tag) #4 -->
+          <source src="../site-images/surfing-video.mp4" alt="Man surfing on waves with group of surfers watching on" type="video/mp4" />
+        </video>
+        <div class="text-block">
+          <!-- SEO #7 (Search Engine Optimatisation) header tags are for SEO -->
+          <h4>World Class <br />Destinations</h4>
+        </div>
       </div>
       <hr />
       <div id="locations"></div>
@@ -108,7 +103,6 @@
         <div id="content-image-4">
           <p id="content-text-4">Tahiti</p>
           <p id="content-text-all">Tahiti is the largest island in French Polynesia, the South Pacific archipelago. Shaped like a figure-8.<img class="flag" src="../site-images/flags/tahiti.png"></p>
-
         </div>
         <div id="content-image-5">
           <p id="content-text-5">Bondai</p>
@@ -130,23 +124,26 @@
           <p id="content-text-9">Mexico</p>
           <p id="content-text-all">Mexico is a country between the U.S. and Central America that's known for its Pacific and Gulf of Mexico beaches and its diverse landscape of mountains, deserts and jungles.<img class="flag" src="../site-images/flags/mexico.jpg"></p>
         </div>
-    </div>
-    <div id="lifestyle"></div>
+      </div>
+      <div id="lifestyle"></div>
     <hr />
 
 <!-- Lifestyle Section -->
-
     <div class="content-text">
         <div></div>
         <div>
+          <!-- SEO #8 (Search Engine Optimatisation) header tags are for SEO -->
           <h1>A surfer's lifestyle...</h1>
+          <!-- HTML5 Structural Element (Article) -->
+          <article>
           <p><strong>Though the iconic illustration of a surfer is one of a peaceful individual living a simple life, the reality often requires some sacrifices and a lifestyle quite removed from that as viewed by non-surfers.</strong>
                 <br /><br />
                 Actually, living a surfer's lifestyle is not about how exactly you appear; the things you wear or simply getting a surfboard tucked under your arm. It is just about a mindset, commitment to the ocean and accepting the fact that almost everything needs to take second place the instant the waves start to roll in.
                 <br /><br />
                 People who have fully committed themselves to surfing usually tend to do this in one of two ways - by relocating to the ocean and surfing at a devoted break day in and day out or by giving up the usual trappings of life and traveling the entire world in a continuous search for the perfect wave.
                 <br /><br />
-                <img class="context-text-image" src="../site-images/people-carrying-surfboards.jpg" />
+                <!-- Accessibility Feature (ALT Tag) #5 -->
+                <img class="context-text-image" alt="Two girls carrying surfboards, one of them is smiling" src="../site-images/people-carrying-surfboards.jpg" />
                 <p id="small-text"><i>Either way, most people will likely find themselves having to live frugally with the intention to achieve their goal and, for a nomadic surfer, will have to accept living without most of the luxuries and benefits that are regarded as the norm.</i></p>
                 This also includes relationships, possessions and all other things which are generally used to indicate security and stability.
                 <br /><br />
@@ -159,7 +156,8 @@
                 <br /><br />
                 <strong>3. Exercise your body:</strong> ask a professional to delineate a surf training program that can fit into your weekly agenda;
                 <br /><br />
-                <img class="context-text-image" src="../site-images/surfer-and-his-dog-on-a-surf-board.jpg" />
+                <!-- Accessibility Feature (ALT Tag) #6 -->
+                <img class="context-text-image" alt="Man surfing with his dog on the top of the surfboard" src="../site-images/surfer-and-his-dog-on-a-surf-board.jpg" />
                 <br /><br />
                 <strong>4. Study the weather charts:</strong> improve your surf forecasting knowledge, and anticipate the best swells;
                 <br /><br />
@@ -169,116 +167,130 @@
                 <br /><br />
                 <strong>7. Don't follow the flock:</strong> surfers tend to surf where other surfers are surfing - watch the waves, and make your assessment;
                 <br /><br />
-                <img class="context-text-image" src="../site-images/man-surfing-on-body-of-water.jpg" />
+                <!-- Accessibility Feature (ALT Tag) #7 -->
+                <img class="context-text-image" alt="Man surfing on a wave, he is mid air" src="../site-images/man-surfing-on-body-of-water.jpg" />
                 <br /><br />
                 <strong>8. Travel and search new waves:</strong> plan a surf trip, build your own hierarchy of surf spots, and establish a personal wave quality scale;
                 <br /><br />
                 <strong>9. Respect others:</strong> surfers think surfing is a spiritual, blessed sport, but they can be greedy and voracious when it comes to catching waves - showing respect is teaching respect;
                 <br /><br />
                 <strong>10. Stay true to yourself:</strong> don't imitate, don't mimic - just let your mind and soul tell you what to do in the waves;</p>
+              </article>
             </div>
         <div></div>
       </div>
-      <hr />
+    <hr />
 
 <!-- Contact Section -->
+    <div id="contact"></div>
+      <div class="contact-section">
+        <p id="demo"></p>
+        <!-- SEO #9 (Search Engine Optimatisation) header tags are for SEO -->
+        <h1>Surfing Questions?</h1>
+        <div class="border"></div>
 
-<div id="contact"></div>
-    <div class="contact-section">
-      <p id="demo"></p>
-      <h1>Surfing Questions?</h1>
-      <div class="border"></div>
-      <form class="contact-form" method="GET">
-        <input type="text" class="contact-form-text" placeholder="Your name" />
-        <input
-          type="email"
-          id="form-name"
-          class="contact-form-text"
-          placeholder="Your email"
-        />
-        <input type="text" class="contact-form-text" placeholder="Your phone" />
-        <textarea
-          class="contact-form-text"
-          placeholder="Your message"
-          id="form-phone"
-        ></textarea>
-        <input
-          type="submit"
-          id="form-submit"
-          class="contact-form-btn"
-          value="Send"
-          onclick="thankYou()"
-        />
-      </form>
-    </div>
+        <!-- HTML5 Form -->
+        <form class="contact-form" method="GET">
+          <input type="text" class="contact-form-text" placeholder="Your name" />
+          <input type="email" id="form-name" class="contact-form-text" placeholder="Your email" />
+          <input type="text" class="contact-form-text" placeholder="Your phone" />
+          <textarea class="contact-form-text" placeholder="Your message" id="form-phone"></textarea>
+          <input type="submit" id="form-submit" class="contact-form-btn" value="Send" onclick="thankYou()" />
+        </form>
+      </div>
     <hr />
 
 <!-- About Me Section -->
-
-      <div id="aboutme"></div>
+    <div id="aboutme"></div>
       <div class="bottom-section">
         <div class="bottom-shader"></div>
         <div class="bottom-text">
-          <div id="my-image"><p></p></div>
-          <h1>Keyanu Tegas</h1>
-          <h5>
-            Web Devloper - Web Designer
-          </h5>
-          <p>
-            A web developer is a programmer who specializes in, or is
-            specifically engaged in, the development of World Wide Web
-            applications, or applications that are run over HTTP from a web
-            server to a web browser.
-          </p>
-
-          <p id="red-text">
-            <strong>don't hover over the image of me...</strong>
-          </p>
-          <ul>
-            <li>
-              <a href="#"><i class="fas fa-envelope"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="far fa-comment"></i></a>
-            </li>
-          </ul>
+          <div id="my-image"></div>
+          <!-- SEO #10 (Search Engine Optimatisation) header tags are for SEO -->
+            <h1>Keyanu Tegas</h1>
+            <h5>Web Devloper - Web Designer</h5>
+            <p>
+              A web developer (ME) is a programmer who specializes in, or is
+              specifically engaged in, the development of World Wide Web
+              applications, or applications that are run over HTTP from a web
+              server to a web browser.
+            </p>
+            <p id="red-text">
+              <strong>don't hover over the image of me...</strong>
+            </p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/keyanu.tegas.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Keyanu63936472" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/KeyanuTegas/IT5038-Web-Application-Project" target="_blank"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
         </div>
       </div>
-      <hr />
+    <hr />
 
 <!-- Thank You Section -->
-
-      <div id="thankyou"></div>
+  <!-- HTML5 Structural Element (Footer) -->
+  <footer>
+    <div id="thankyou"></div>
       <div class="thank-you-content">
-      <video autoplay muted loop id="myVideo">
-        <source src="../site-images/surfing-video.mp4" type="video/mp4" />
-      </video>
-     <div class="text-block">
-        <h4>Thank you for visiting my website!</h4>
-      </div>
+        <video autoplay muted loop id="myVideo">
+          <source src="../site-images/surfing-video.mp4" type="video/mp4" />
+        </video>
+        <div class="text-block-2">
+          <h4>Thank you for visiting my website!</h4>
+          <p>Frequently Asked Questions
+            <br /><br />Q1. How do you navigate the site?
+            <br /><br />- You click on the orange navbar icon on the top left of the screen
+            <br /><br />Q2. How do you contact the developer?
+            <br /><br />- You enter your name, phone number, email and message in the contact section... then just click submit.
+            <br /><br />Q3. Does the developer of this website surf?
+            <br /><br />- No, sadly not.
+            <br /><br />Q4. What is the inspiration behind this site?
+            <br /><br />- The beauty of the ocean and waves
+            <br /><br />Q5. What is the inspiration behind this site?
+            <br /><br />- The beauty of the ocean and waves
+            <br /><br />Q6. What are the 10 Important Lessons of surfing?
+            <br /><br />
+            - 1. Know the ocean <br /><br />
+            - 2. Eat well <br /><br />
+            - 3. Exercise your body <br /><br />
+            - 4. Study the weather charts <br /><br />
+            - 5. Read surfing books <br /><br />
+            - 6. Surf more <br /><br />
+            - 7. Don't follow the flock <br /><br />
+            - 8. Travel and serach new waves <br /><br />
+            - 9. Respect others <br /><br />
+            - 10. STAY TRUE TO YOURSELF<br /><br />
+          </p>
+        </div>
       </div> 
-      <hr />
+    <hr />
+  </footer>
 
 <!-- Navigation Section -->
 
-<a class="toggleNav" onclick="toggleNavigation()"><i class="fas fa-bars"></i></a>
-<div id="shader"></div>
-<div class="navbar">
-  <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#lifestyle"><i class="far fa-heart"></i> Lifestyle Blog</a>
-  <a href="#travel"><i class="fas fa-shuttle-van"></i> Travel Spots</a>
-  <a href="#aboutme"><i class="fas fa-star"></i> About Me</a>
-  <a href="#contact"><i class="fas fa-star"></i> Contact</a>
-  <a href="#thankyou"><i class="fas fa-star"></i> Thank you</a>
-</div>
-
-
+    <a class="toggleNav" onclick="toggleNavigation()"><i class="fas fa-bars"></i></a>
+    <div id="shader"></div>
+    <div class="navbar">
+      <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#lifestyle"><i class="far fa-heart"></i> Lifestyle Blog</a>
+      <a href="#travel"><i class="fas fa-shuttle-van"></i> Travel Spots</a>
+      <a href="#aboutme"><i class="fas fa-star"></i> About Me</a>
+      <a href="#contact"><i class="fas fa-star"></i> Contact</a>
+      <a href="#thankyou"><i class="fas fa-star"></i> Thank you / FAQ</a>
     </div>
-    <script>
 
+  </div>
+
+<!-- Javascript -->
+
+<script>
+    // Interative Element #1
       function toggleNavigation() {
         let nav = document.querySelector(".navbar");
         let shader = document.querySelector("#shader")
@@ -288,11 +300,15 @@
           nav.style.display = "none";
         }
       }
-
       var x = document.getElementById("form-submit");
+      
+      // Interative Element #2
       function thankYou() {
         alert("Thanks for visiting!")
       }
+
+      // Interative Element #3 
+      // 
       function formValidate() {
         let x = document.getElementById("form-phone").value
         if (isNaN(x)) {
@@ -302,6 +318,7 @@
         }
       }
 
+      // Interative Element #4
       function hover1(element) {
         element.setAttribute(
           "src",
@@ -309,6 +326,7 @@
         );
       }
 
+      // Interative Element #5
       function unhover1(element) {
         element.setAttribute(
           "src",
@@ -316,6 +334,7 @@
         );
       }
 
+      // Interative Element #6
       function hover2(element) {
         element.setAttribute(
           "src",
@@ -323,6 +342,7 @@
         );
       }
 
+      // Interative Element #7
       function unhover2(element) {
         element.setAttribute(
           "src",
@@ -330,6 +350,7 @@
         );
       }
 
+      // Interative Element #8
       function hover3(element) {
         element.setAttribute(
           "src",
@@ -337,21 +358,23 @@
         );
       }
 
+      // Interative Element #9
       function unhover3(element) {
         element.setAttribute(
           "src",
           "../site-images/3-blue-surfboard-with-leash-on-sand.jpg"
         );
       }
-/*
-      function changeCss() {
+
+      // Interative Element #10
+      function changeCSS() {
         var navElement = document.querySelector(".banner:before");
         if (this.scrollY > 200) {
           navElement.style.opacity = fixed;
         }
       }
       window.addEventListener("scroll", changeCss, false);
-      */
+
     </script>
   </body>
 </html>

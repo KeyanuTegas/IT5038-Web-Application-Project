@@ -1,5 +1,6 @@
-/* Style the navigation bar */
+/* Note: Nothing marking related here just 83 lines of CSS code */
 
+/* Style the navigation bar */
 #shader {
   position: absolute;
   top: 0px;
@@ -48,21 +49,15 @@
   font-size: 16px;
 }
   
-/* Navbar links on mouse-over */
 #navbar a:hover {
   background-color: rgb(236, 164, 81);
 }
   
-/* Current/active navbar link */
 .active {
   background-color: rgb(238, 166, 34);
   z-index: 0;
 }
 
-  
-/* Add responsiveness - will automatically display 
-the navbar vertically instead of horizontally on 
-screens less than 500 pixels */
 @media screen and (max-width: 720px) {
   .navbar a {
     float: none;
